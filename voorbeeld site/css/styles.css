@@ -1,0 +1,62 @@
+/* importeer Poppins font van fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* importeer Helvetica font uit onze eigen mappen */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../assets/HelveticaNeue.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* CSS reset, deze zet standaard alle witruimte (margin en padding) op 0. Je moet dan zelf overal weer margin en padding toevoegen op de elementen waar je dit wel wilt hebben.
+   Ook zorgen we dat voor alle block elementen de afmetingen niet alleen worden bepaald door de content, maar dat ook padding en border meetellen. 
+   Dit ontwerpt makkelijker.
+   Zie: https://www.internetingishard.com/html-and-css/css-box-model/#content-boxes-and-border-boxes  */
+*, html {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/* Stel een witte achtergrond in en geef de body een beetje margin, relatief ten opzichte van het schermformaat.
+   Zet tevens een standaard lettertype wat overerft naar alle tags binnen de body, tenzij die zelf expliciet een ander lettertype krijgen. */
+body {
+	background-color: #FFFFFF;
+	background-image: url(../images/kring.png);
+	background-repeat: no-repeat;
+	background-position: 70% 90%;
+	margin: 5vh 5vw 5vh 5vw;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 1.0em;
+	color: #090806;
+	font-weight: 300;
+}
+
+/* onderstaande styles geven een voorbeeld hoe je de geimporteerde fonts kunt gebruiken.
+   Op je eigen website mag je natuurlijk andere lettertypes, groottes, en
+   kleuren, etc. voor deze tags gebruiken. */
+   
+h1 {
+	font-family: 'Poppins', sans-serif;   
+	font-size: 2em;
+	color: #864D43;
+	font-weight: 700; /* bold */
+	margin-bottom: 0.3em;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;   
+	font-size: 1.5em;
+	color: #6369AC;
+	font-weight: 700; /* bold */
+	margin-bottom: 0.5em;
+}
+
+p {
+	margin-bottom: 0.5em;
+}
+
+a {
+	color: #90C026;
+}
